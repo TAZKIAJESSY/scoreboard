@@ -8,6 +8,13 @@ function AppPlayerForm(props) {
 
     props.addPlayer(name);
     //set_name("");
+
+    if (!name) {
+      window.alert("Hey fill in the entire form!");
+    } else {
+      props.addPlayer(name);
+      set_name("");
+    }
   }
   return (
     <div className="AddPlayerForm">
