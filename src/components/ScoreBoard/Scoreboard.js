@@ -93,9 +93,9 @@ function Scoreboard() {
     });
     set_players(random);
   }
-  const addPlayer = (name) => {
-    console.log("Let's add a new player with the name:", name);
-    const newPlayer = { id: players.length + 1, name, score: 0 };
+  const addPlayer = (newName) => {
+    console.log("Let's add a new player with the name:", newName);
+    const newPlayer = { id: players.length + 1, name: newName, score: 0 };
     console.log("NEW PLAYER", newPlayer);
     const updatedArray = [...players, newPlayer];
     console.log(":NEW ARRAY OF PLAYERS", updatedArray);
